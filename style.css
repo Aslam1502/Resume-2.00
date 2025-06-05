@@ -44,9 +44,9 @@ body, p, ul, li, h1, h2, h3, h4, h5, h6 {
     text-decoration: underline !important;
 }
 .profile{
-    width: 100%;
+    width: 92%;
     max-width: 500px;
-    margin: 30px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,8 +54,8 @@ body, p, ul, li, h1, h2, h3, h4, h5, h6 {
     border: 1.5px solid #e0e0e0;
     border-radius: 10px;
     box-shadow: 0 6px 24px rgba(127,161,198,0.10);
-    padding: 30px 20px 20px 20px;
-    gap: 18px;
+    padding: 20px 15px;
+    gap: 15px;
 }
 .profile-img-container {
     position: relative;
@@ -134,19 +134,29 @@ p {
 }
 @media (max-width: 600px) {
     .profile {
-        max-width: 98vw;
-        padding: 18px 4vw;
+        max-width: 95%;
+        margin: 15px auto;
+        padding: 15px 10px;
     }
     section {
-        padding: 12px 6px;
+        padding: 12px 10px;
+        margin-bottom: 10px;
     }
     .name {
-        font-size: 22px;
+        font-size: 20px;
     }
     .profile-img-container {
-        width: 90px;
-        height: 90px;
+        width: 85px;
+        height: 85px;
         border-width: 3px;
+        margin-bottom: 12px;
+    }
+    #main-div {
+        padding: 10px;
+    }
+    .header {
+        height: auto;
+        padding: 10px 0 25px 0;
     }
 }
 .profile:hover {
