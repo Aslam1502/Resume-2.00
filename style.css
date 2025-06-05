@@ -1,0 +1,170 @@
+html {
+    font-size: 16px;
+}
+body, p, ul, li, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    word-break: break-word;
+}
+@media (max-width: 900px) {
+    html { font-size: 15px; }
+}
+@media (max-width: 700px) {
+    html { font-size: 14px; }
+    .profile, section, .header {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+@media (max-width: 500px) {
+    html { font-size: 13px; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.1rem; }
+    .name { font-size: 1.1rem; }
+    .profile-img-container {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (max-width: 350px) {
+    html { font-size: 11px; }
+}
+.header{
+    background: linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%);
+    color: #222;
+    padding: 10px 0 45px 0;
+    text-align: center;
+    height: 100px;
+    border: 5px solid #e0e0e0;
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.header a:hover {
+    color: #7fa1c6 !important;
+    text-decoration: underline !important;
+}
+.profile{
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f9fa 60%, #e0eafc 100%);
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(127,161,198,0.10);
+    padding: 30px 20px 20px 20px;
+    gap: 18px;
+}
+.profile-img-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    overflow: visible;
+    background: linear-gradient(135deg, #e0eafc 60%, #f8f9fa 100%);
+    box-shadow: 0 6px 24px rgba(127,161,198,0.18), 0 1.5px 8px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #7fa1c6;
+    transition: all 0.3s ease;
+}
+.profile-img-container img {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: all 0.3s ease;
+}
+.profile-img-container:hover {
+    border-color: #1a3a5d;
+    box-shadow: 0 12px 32px rgba(127,161,198,0.22);
+}
+.profile-img-container:hover img {
+    transform: scale(1.05) rotate(-2deg);
+}
+h2{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #333;
+    margin: 10px 0 8px 0;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+.name {
+    letter-spacing: 1px;
+    color: #1a3a5d;
+    font-size: 28px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+section {
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border-left: 4px solid #7fa1c6;
+    transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+}
+section:hover {
+    box-shadow: 0 6px 24px rgba(127,161,198,0.18);
+    border-left: 4px solid #1a3a5d;
+    transform: translateY(-4px) scale(1.02);
+    background: linear-gradient(90deg, #e0eafc 60%, #f8f9fa 100%);
+}
+p {
+    color: #444;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.6;
+}
+#main-div {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #f4f6fb 60%, #e0eafc 100%);
+    padding-bottom: 40px;
+}
+@media (max-width: 600px) {
+    .profile {
+        max-width: 98vw;
+        padding: 18px 4vw;
+    }
+    section {
+        padding: 12px 6px;
+    }
+    .name {
+        font-size: 22px;
+    }
+    .profile-img-container {
+        width: 90px;
+        height: 90px;
+        border-width: 3px;
+    }
+}
+.profile:hover {
+    box-shadow: 0 8px 32px rgba(127,161,198,0.18);
+    transform: translateY(-6px) scale(1.01);
+    background: linear-gradient(135deg, #f8f9fa 60%, #e0eafc 100%);
+}
+li:hover {
+    background: #e0eafc;
+    border-radius: 6px;
+    color: #1a3a5d;
+    transition: background 0.2s, color 0.2s;
+    padding: 2px 8px;
+}
+.courses-section li {
+    margin-bottom: 8px;
+}
+.courses-section li i {
+    color: #7fa1c6;
+    font-size: 0.95em;
+}
